@@ -1,0 +1,97 @@
+﻿body {
+    padding-top: 70px; 
+}
+
+.logo {
+    width:30px;
+    height:30px;
+}
+
+
+
+/***Navbar style***/
+/*https://work.smarchal.com/twbscolor/css/5a460a2d2001fbfeff9a8b6e0*/
+
+.navbar-default {
+  background-color: #5a460a;
+  border-color: #2d2001;
+}
+.navbar-default .navbar-brand {
+  color: #fbfeff;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #9a8b6e;
+}
+.navbar-default .navbar-text {
+  color: #fbfeff;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #fbfeff;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #9a8b6e;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #9a8b6e;
+  background-color: #2d2001;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #9a8b6e;
+  background-color: #2d2001;
+}
+.navbar-default .navbar-toggle {
+  border-color: #2d2001;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #2d2001;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fbfeff;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #fbfeff;
+}
+.navbar-default .navbar-link {
+  color: #fbfeff;
+}
+.navbar-default .navbar-link:hover {
+  color: #9a8b6e;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #fbfeff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #9a8b6e;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #9a8b6e;
+    background-color: #2d2001;
+  }
+}
+
+div.navbar-collapse.collapse {
+    display: block;
+    overflow: hidden;
+    max-height: 0px;
+    -webkit-transition: max-height .3s ease;
+    -moz-transition: max-height .3s ease;
+    -o-transition: max-height .3s ease;
+    transition: max-height .3s ease;
+}
+
+    div.navbar-collapse.collapse.in {
+        max-height: 2000px;
+    }
