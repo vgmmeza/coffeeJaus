@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration;
+using coffeeJaus.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace coffeeJaus
 {
@@ -34,6 +36,9 @@ namespace coffeeJaus
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+
+            var connection = @"Server=.\SQLEXPRESS;Database=CoffeeJaus;Trusted_Connection=True;";
+            services.AddDbContext<CoffeeContext>(options => options.UseSqlServer(connection));
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
