@@ -1,12 +1,17 @@
 ﻿(function (angular) {
     'use strict';
 
-    angular.module('app.controllers', [])
-        .controller('unitCtrl',
-            function ($scope, alerts, $routeParams, toastr, $uibModal, $http) {
+    app.controller('NewUnitCtrl',
+            function ($scope, $http, $location) {
 
-                $scope.ShowMessage = function (message) {
+                $scope.unit = unit;
 
+                $scope.Save = function () {
+                    console.log($scope.unit);
+                };
+
+                $scope.Cancel = function () {
+                    $location.path('/');
                 };
 
             });

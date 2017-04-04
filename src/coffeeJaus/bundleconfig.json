@@ -1,8 +1,17 @@
 [
   {
+    "outputFileName": "wwwroot/App/bundle.js",
+    "inputFiles": [
+      "wwwroot/App/app.js",
+      "wwwroot/App/Models.js",
+      "wwwroot/App/unitCtrl.js"
+    ]
+  },
+  {
     "outputFileName": "wwwroot/App/coffeeJaus.js",
     "inputFiles": [
       "wwwroot/App/app.js",
+      "wwwroot/App/Models.js",
       "wwwroot/App/unitCtrl.js"
     ]
   }

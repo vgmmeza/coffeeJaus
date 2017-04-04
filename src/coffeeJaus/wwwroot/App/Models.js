@@ -1,0 +1,4 @@
+﻿var unit = {
+    Name: '',
+    Abrev : ''
+};
